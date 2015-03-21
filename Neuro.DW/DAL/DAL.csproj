@@ -51,8 +51,11 @@
     <Compile Include="Entities\Attachment.cs" />
     <Compile Include="Entities\Document.cs" />
     <Compile Include="Entities\ReferencedDocument.cs" />
+    <Compile Include="Entities\ResourceItem.cs" />
+    <Compile Include="Entities\ResourceItemGroup.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="DocWriterContext.cs" />
+    <Compile Include="Entities\UserRole.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

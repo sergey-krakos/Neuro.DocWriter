@@ -22,6 +22,10 @@ namespace DAL
         public virtual DbSet<ReferencedDocument> ReferencedDocuments { get; set; }
 
         public virtual DbSet<Document> Documents { get; set; }
+
+        public virtual DbSet<ResourceItemGroup> ResourceItemGroups { get; set; }
+
+        public virtual DbSet<ResourceItem> ResourceItems { get; set; }
         
     }
 }
