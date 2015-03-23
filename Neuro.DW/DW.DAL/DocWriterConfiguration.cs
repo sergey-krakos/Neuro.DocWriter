@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 namespace DW.DAL
 {
     /// <summary>
-    /// 
+    /// configuration for context
     /// </summary>
     public class DocWriterConfiguration : DbConfiguration
     {
         public DocWriterConfiguration()
         {
-            DbInterception.Add(new DocWriterEFInterceptor());
+            this.AddInterceptor(new DocWriterEFInterceptor());
+            this.SetDatabaseInitializer<DocWriterContext>(null);
         }
     }
 }

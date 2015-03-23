@@ -8,6 +8,7 @@ namespace DW.DAL
     /// <summary>
     /// Class, representing database context for an DocWriter database
     /// </summary>
+    [DbConfigurationType(typeof(DocWriterConfiguration))]
     public class DocWriterContext : DbContext
     {
         public DocWriterContext()
