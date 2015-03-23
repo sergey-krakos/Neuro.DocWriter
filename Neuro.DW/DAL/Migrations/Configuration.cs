@@ -1,11 +1,11 @@
+using System;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
+using System.Linq;
+
 namespace DAL.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
-    internal sealed class Configuration : DbMigrationsConfiguration<DAL.DocWriterContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DocWriterContext>
     {
         public Configuration()
         {

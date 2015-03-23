@@ -1,28 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace DAL.Entities
 {
     public class Document
     {
+        [Key]
         public int Id { get; set; }
 
+        [Required]
         public string Title { get; set; }
 
         public string Description { get; set; }
 
+        [Required]
         public string SourceSystem { get; set; }
 
+        [Required]
         public int AuthorId { get; set; }
         public virtual User Author { get; set; }
 
+        [Required]
         public DateTime CreatedOn { get; set; }
 
         public virtual List<Attachment> Attachments { get; set; }
 
-        public virtual List<ReferencedDocument> ReferencedDocuments { get; set; }
+        public virtual List<ReferencedDocument> ReferencedDocuments { get; set; }       
     }
 }
