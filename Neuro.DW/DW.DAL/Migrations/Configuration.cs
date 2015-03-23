@@ -10,10 +10,11 @@ namespace DW.DAL.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            
+            AutomaticMigrationDataLossAllowed = false;
+
         }
 
-        protected override void Seed(DAL.DocWriterContext context)
+        protected override void Seed(DocWriterContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -7,8 +7,8 @@
     <ProjectGuid>{48C3D2E8-172A-43E6-B6BE-D60BD610A3CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAL</RootNamespace>
-    <AssemblyName>DAL</AssemblyName>
+    <RootNamespace>DW.DAL</RootNamespace>
+    <AssemblyName>DW.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocWriterConfiguration.cs" />
+    <Compile Include="DocWriterEFInterceptor.cs" />
     <Compile Include="Entities\Attachment.cs" />
     <Compile Include="Entities\Document.cs" />
     <Compile Include="Entities\ReferencedDocument.cs" />
@@ -62,6 +64,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DW.Common\DW.Common.csproj">
+      <Project>{7a8c7903-8c2c-40f7-8197-45834e7d8f9a}</Project>
+      <Name>DW.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

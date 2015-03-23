@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DW.Common
 {
     public class Logger : ILogger
     {
-
+        /// <summary>
+        /// Logging implementation using Trace object
+        /// </summary>
         public void Information(string message)
         {
             Trace.TraceInformation(message);
@@ -72,8 +71,6 @@ namespace DW.Common
 
         private static string FormatExceptionMessage(Exception exception, string format, object[] vars)
         {
-            // Simple exception formatting: for a more comprehensive version see 
-            // http://code.msdn.microsoft.com/windowsazure/Fix-It-app-for-Building-cdd80df4
             var sb = new StringBuilder();
             sb.Append(string.Format(format, vars));
             sb.Append(" Exception: ");

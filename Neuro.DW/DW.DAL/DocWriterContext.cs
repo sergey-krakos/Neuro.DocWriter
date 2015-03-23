@@ -11,9 +11,7 @@ namespace DW.DAL
     public class DocWriterContext : DbContext
     {
         public DocWriterContext()
-            : base("name=DocWriter")
-        {
-        }
+            : base("name=DocWriter") {}
 
         public virtual DbSet<User> Users { get; set; }
 
