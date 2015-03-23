@@ -10,8 +10,10 @@ namespace DW.DAL.Entities
 
         public string SourceSystem { get; set; }
 
+        [Required]
         public bool Auto { get; set; }
 
+        [Required]
         public string Revision { get; set; }
 
         [Required]
@@ -20,14 +22,9 @@ namespace DW.DAL.Entities
         public string Note { get; set; }
 
         [Required]
-        public int AuthorId { get; set; }
-        public virtual User Author { get; set; }
-
-        [Required]
         public DateTime CreatedOn { get; set; }
 
         [Required]
-        public int DocumentId { get; set; }
         public virtual Document Document { get; set; }
     }
 }

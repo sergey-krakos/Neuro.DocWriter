@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DW.DAL.Entities
 {
@@ -14,13 +15,9 @@ namespace DW.DAL.Entities
         public string Description { get; set; }
 
         [Required]
-        public int AuthorId { get; set; }
-        public virtual User Author { get; set; }
-
         public DateTime CreatedOn { get; set; }
 
         [Required]
-        public int DocumentId { get; set; }
         public virtual Document Document { get; set; }
     }
 }
