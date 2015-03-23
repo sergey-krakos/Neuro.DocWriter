@@ -1,9 +1,9 @@
 using System;
 using System.Data.Entity;
 using System.Linq;
-using DAL.Entities;
+using DW.DAL.Entities;
 
-namespace DAL
+namespace DW.DAL
 {
     /// <summary>
     /// Class, representing database context for an DocWriter database

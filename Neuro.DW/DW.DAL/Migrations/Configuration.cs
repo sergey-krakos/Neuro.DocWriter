@@ -3,13 +3,14 @@ using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Linq;
 
-namespace DAL.Migrations
+namespace DW.DAL.Migrations
 {
     internal sealed class Configuration : DbMigrationsConfiguration<DocWriterContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            
         }
 
         protected override void Seed(DAL.DocWriterContext context)

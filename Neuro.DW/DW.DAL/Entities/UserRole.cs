@@ -1,4 +1,4 @@
-﻿namespace DAL.Entities
+﻿namespace DW.DAL.Entities
 {
     public enum UserRole
     {

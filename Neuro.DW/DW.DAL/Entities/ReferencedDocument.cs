@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace DAL.Entities
+namespace DW.DAL.Entities
 {
     public class ReferencedDocument
     {

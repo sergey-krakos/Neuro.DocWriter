@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace DAL.Entities
+namespace DW.DAL.Entities
 {
     public class ResourceItemGroup
     {

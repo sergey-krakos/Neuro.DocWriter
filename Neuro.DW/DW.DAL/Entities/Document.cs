@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace DAL.Entities
+namespace DW.DAL.Entities
 {
-    public class Attachment
+    public class Document
     {
         [Key]
         public int Id { get; set; }
@@ -14,13 +15,17 @@ namespace DAL.Entities
         public string Description { get; set; }
 
         [Required]
+        public string SourceSystem { get; set; }
+
+        [Required]
         public int AuthorId { get; set; }
         public virtual User Author { get; set; }
 
+        [Required]
         public DateTime CreatedOn { get; set; }
 
-        [Required]
-        public int DocumentId { get; set; }
-        public virtual Document Document { get; set; }
+        public virtual List<Attachment> Attachments { get; set; }
+
+        public virtual List<ReferencedDocument> ReferencedDocuments { get; set; }       
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DAL.Entities
+namespace DW.DAL.Entities
 {
     /// <summary>
     /// Entity, that represents user of a system
