@@ -25,6 +25,9 @@ namespace DW.DAL.Entities
 
         public virtual List<Attachment> Attachments { get; set; }
 
-        public virtual List<ReferencedDocument> ReferencedDocuments { get; set; }       
+        public virtual List<ReferencedDocument> ReferencedDocuments { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
     }
 }

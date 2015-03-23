@@ -20,5 +20,8 @@ namespace DW.DAL.Entities
 
         [Required]
         public virtual User Author { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
     }
 }

@@ -16,5 +16,11 @@ namespace DW.DAL.Entities
         public string Email { get; set; }
 
         public UserRole Role { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
     }
 }

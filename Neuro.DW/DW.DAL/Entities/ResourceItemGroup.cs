@@ -12,5 +12,8 @@ namespace DW.DAL.Entities
         public string GroupName { get; set; }
 
         public virtual List<ResourceItem> ResourceItems { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
     }
 }

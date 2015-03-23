@@ -19,5 +19,8 @@ namespace DW.DAL.Entities
 
         [Required]
         public virtual Document Document { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
     }
 }
