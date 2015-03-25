@@ -9,13 +9,13 @@ using DW.DAL.Entities;
 namespace DW.BL.Interfaces
 {
     /// <summary>
-    /// Contains functionality for managing ResourceItems
+    /// Interface, that contains functionality for managing Resource Items
     /// </summary>
     public interface IResourceService
     {
-        ResourceItem GetGesourceItem(string resourceName);
+        ResourceItem GetResourceItem(string resourceKey);
 
-        ResourceItemGroup GetResourceGroup(string resourceGroupName);
+        ResourceItemGroup GetResourceGroup(string groupNameKey);
 
         void Add(ResourceItem resourceItem);
 

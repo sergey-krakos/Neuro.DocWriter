@@ -9,16 +9,16 @@ using DW.DAL.Entities;
 namespace DW.BL.Interfaces
 {
     /// <summary>
-    /// Interface that contains functionality for managing Referenced Documents
+    /// Interface, that contains functionality for managing Referenced Documents
     /// </summary>
     public interface IReferencedDocumentsService
     {
         IList<ReferencedDocument> GetAllByDocumentId(int documentId);
 
-        void Add(ReferencedDocument resourceItem);
+        void Add(ReferencedDocument referencedDocument);
 
-        void Update(ReferencedDocument resourceItem);
+        void Update(ReferencedDocument referencedDocument);
 
-        void Remove(ReferencedDocument resourceItem);
+        void Remove(ReferencedDocument referencedDocument);
     }
 }

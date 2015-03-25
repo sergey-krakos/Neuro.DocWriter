@@ -9,7 +9,7 @@ using DW.DAL.Entities;
 namespace DW.BL.Interfaces
 {
     /// <summary>
-    /// Interface that contains functionality for managing Document Attachments
+    /// Interface, that contains functionality for managing Document Attachments
     /// </summary>
     public interface IAttachmentsService
     {
