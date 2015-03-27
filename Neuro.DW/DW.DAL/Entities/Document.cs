@@ -4,6 +4,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DW.DAL.Entities
 {
+    /// <summary>
+    /// Entity for PCAD
+    /// </summary>
     public class Document
     {
         [Key]

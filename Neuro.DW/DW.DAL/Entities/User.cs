@@ -19,8 +19,5 @@ namespace DW.DAL.Entities
 
         [Timestamp]
         public byte[] RowVersion { get; set; }
-
-        [Timestamp]
-        public byte[] RowVersion { get; set; }
     }
 }
