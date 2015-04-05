@@ -23,6 +23,9 @@ namespace DW.DAL
         public virtual DbSet<ResourceItemGroup> ResourceItemGroups { get; set; }
 
         public virtual DbSet<ResourceItem> ResourceItems { get; set; }
-        
+
+        public virtual DbSet<LookupItemCategory> LookupItemCategories { get; set; }
+
+        public virtual DbSet<LookupItem> LookupItems { get; set; }
     }
 }

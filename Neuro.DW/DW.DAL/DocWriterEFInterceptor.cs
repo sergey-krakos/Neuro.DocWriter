@@ -5,9 +5,9 @@ using DW.Common;
 
 namespace DW.DAL
 {
-    public class DocWriterEFInterceptor : DbCommandInterceptor
+    public class DocWriterEfInterceptor : DbCommandInterceptor
     {
-        private ILogger _logger = new Logger();
+        private readonly ILogger _logger = new Logger();
         private readonly Stopwatch _stopwatch = new Stopwatch();
 
         public override void ScalarExecuting(DbCommand command, DbCommandInterceptionContext<object> interceptionContext)

@@ -20,6 +20,7 @@ namespace DW.DAL.Entities
         [Required]
         public string SourceSystem { get; set; }
 
+        public int AuthorId { get; set; }
         [Required]
         public virtual User Author { get; set; }
 

@@ -65,7 +65,7 @@ namespace DW.Common
         }
         public void TraceApi(string componentName, string method, TimeSpan timespan, string properties)
         {
-            string message = String.Concat("Component:", componentName, ";Method:", method, ";Timespan:", timespan.ToString(), ";Properties:", properties);
+            var message = String.Concat("Component:", componentName, ";Method:", method, ";Timespan:", timespan.ToString(), ";Properties:", properties);
             Trace.TraceInformation(message);
         }
 
@@ -74,7 +74,7 @@ namespace DW.Common
             var sb = new StringBuilder();
             sb.Append(string.Format(format, vars));
             sb.Append(" Exception: ");
-            sb.Append(exception.ToString());
+            sb.Append(exception);
             return sb.ToString();
         }
     }

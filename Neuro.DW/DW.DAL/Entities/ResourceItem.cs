@@ -15,9 +15,11 @@ namespace DW.DAL.Entities
 
         public int ToolTip { get; set; }
 
+        public int GroupId { get; set; }
         [Required]
         public virtual ResourceItemGroup Group { get; set; }
 
+        public int AuthorId { get; set; }
         [Required]
         public virtual User Author { get; set; }
 

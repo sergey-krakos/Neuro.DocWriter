@@ -49,12 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocWriterConfiguration.cs" />
-    <Compile Include="DocWriterEFInterceptor.cs" />
+    <Compile Include="DocWriterEfInterceptor.cs" />
     <Compile Include="Entities\Attachment.cs" />
     <Compile Include="Entities\Document.cs" />
+    <Compile Include="Entities\Image.cs" />
+    <Compile Include="Entities\LookupItem.cs" />
+    <Compile Include="Entities\LookupItemCategory.cs" />
     <Compile Include="Entities\ReferencedDocument.cs" />
     <Compile Include="Entities\ResourceItem.cs" />
     <Compile Include="Entities\ResourceItemGroup.cs" />
+    <Compile Include="Entities\RichTextItem.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="DocWriterContext.cs" />
     <Compile Include="Entities\UserRole.cs" />

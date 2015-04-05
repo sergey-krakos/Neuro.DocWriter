@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DW.DAL.Entities
 {
@@ -10,13 +9,18 @@ namespace DW.DAL.Entities
         public int Id { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string FileName { get; set; }
 
         public string Description { get; set; }
+
+        public string Revision { get; set; }
+
+        public bool IsUploadedToSharepoint { get; set; }
 
         [Required]
         public DateTime CreatedOn { get; set; }
 
+        public int DocumentId { get; set; }
         [Required]
         public virtual Document Document { get; set; }
 

@@ -21,9 +21,16 @@ namespace DW.DAL.Entities
 
         public string Note { get; set; }
 
+        public string DocumentUrl { get; set; }
+
+        public string DocumentCategory { get; set; }
+
+        public bool LockDocument { get; set; }
+
         [Required]
         public DateTime CreatedOn { get; set; }
 
+        public int DocumentId { get; set; }
         [Required]
         public virtual Document Document { get; set; }
 

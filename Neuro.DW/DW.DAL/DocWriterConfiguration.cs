@@ -9,8 +9,8 @@ namespace DW.DAL
     {
         public DocWriterConfiguration()
         {
-            this.AddInterceptor(new DocWriterEFInterceptor());
-            this.SetDatabaseInitializer<DocWriterContext>(null);
+            AddInterceptor(new DocWriterEfInterceptor());
+            SetDatabaseInitializer<DocWriterContext>(null);
         }
     }
 }
